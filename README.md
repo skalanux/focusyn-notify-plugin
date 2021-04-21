@@ -1,5 +1,7 @@
 Focusyn Notify Plugin
 ====================
+(This is a fork from a plugin from tomate-gtk)
+https://github.com/eliostvs/tomate-notify-plugin
 
 Focusyn is a timer for the Pomodoro Technique.
 This plugin shows OSD notifications when the timer starts and stops.
@@ -7,12 +9,7 @@ This plugin shows OSD notifications when the timer starts and stops.
 Installation
 ------------
 
-Go to [this page](https://github.com/eliostvs/focusyn-gtk) for instructions.
-
-Bugs and Suggestions
--------------------
-
-Bugs and suggestions should be reported [here](https://github.com/eliostvs/focusyn-notify-plugin/issues).
+WIP
 
 License
 -------
