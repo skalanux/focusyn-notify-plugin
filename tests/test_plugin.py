@@ -5,12 +5,12 @@ import gi
 import pytest
 from wiring import Graph
 
-from tomate.pomodoro import Bus, Config, Events, SessionType
-from tomate.ui.testing import create_session_payload
+from focusyn.pomodoro import Bus, Config, Events, SessionType
+from focusyn.ui.testing import create_session_payload
 
 gi.require_version("Notify", "0.7")
 
-IconPath = os.path.join(os.path.dirname(__file__), "data", "icons", "hicolor", "32x32", "apps", "tomate.png")
+IconPath = os.path.join(os.path.dirname(__file__), "data", "icons", "hicolor", "32x32", "apps", "focusyn.png")
 
 
 @pytest.fixture
@@ -29,8 +29,8 @@ def graph() -> Graph:
 @patch("gi.repository.Notify.Notification.new")
 def plugin(_, graph, bus):
     graph.providers.clear()
-    graph.register_instance("tomate.bus", bus)
-    graph.register_instance("tomate.config", Config(bus))
+    graph.register_instance("focusyn.bus", bus)
+    graph.register_instance("focusyn.config", Config(bus))
 
     from notify_plugin import NotifyPlugin
 
@@ -43,7 +43,7 @@ def plugin(_, graph, bus):
 def test_enable_notify_when_plugin_active(init, plugin):
     plugin.activate()
 
-    init.assert_called_with("tomate-notify-plugin")
+    init.assert_called_with("focusyn-notify-plugin")
 
 
 @patch("gi.repository.Notify.uninit")

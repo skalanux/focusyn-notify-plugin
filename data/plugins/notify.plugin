@@ -5,5 +5,5 @@ Module = notify_plugin
 [Documentation]
 Author = Elio Esteves Duarte
 Version = 0.13.0
-Website = https://github.com/eliostvs/tomate-notify-plugin
+Website = https://github.com/eliostvs/focusyn-notify-plugin
 Description = Shows screen notifications

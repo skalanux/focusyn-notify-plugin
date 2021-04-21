@@ -35,16 +35,16 @@ DATA_FILES = [
 
 
 setup(
-    author="Elio Esteves Duarte",
-    author_email="elio.esteves.duarte@gmail.com",
-    description="Tomate plugin that shows screen notifications.",
+    author="Juan Manuel Schillaci",
+    author_email="jmschillaci@gmail.com",
+    description="Focusyn plugin that shows screen notifications.",
     include_package_data=True,
     keywords="pomodoro,timer",
     license="GPL-3",
     long_description=open("README.md").read(),
-    name="tomate-notify-plugin",
-    data_files=find_data_files(DATA_FILES, "tomate"),
-    url="https://github.com/eliostvs/tomate-notify-plugin",
-    version="0.13.0",
+    name="focusyn-notify-plugin",
+    data_files=find_data_files(DATA_FILES, "focusyn"),
+    url="https://github.com/skajms/focusyn-notify-plugin",
+    version="0.1.0",
     zip_safe=False,
 )

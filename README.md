@@ -1,18 +1,18 @@
-Tomate Notify Plugin
+Focusyn Notify Plugin
 ====================
 
-Tomate is a timer for the Pomodoro Technique.
+Focusyn is a timer for the Pomodoro Technique.
 This plugin shows OSD notifications when the timer starts and stops.
 
 Installation
 ------------
 
-Go to [this page](https://github.com/eliostvs/tomate-gtk) for instructions.
+Go to [this page](https://github.com/eliostvs/focusyn-gtk) for instructions.
 
 Bugs and Suggestions
 -------------------
 
-Bugs and suggestions should be reported [here](https://github.com/eliostvs/tomate-notify-plugin/issues).
+Bugs and suggestions should be reported [here](https://github.com/eliostvs/focusyn-notify-plugin/issues).
 
 License
 -------

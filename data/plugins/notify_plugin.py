@@ -9,8 +9,8 @@ gi.require_version("Notify", "0.7")
 from wiring import Graph
 from gi.repository import Notify
 
-import tomate.pomodoro.plugin as plugin
-from tomate.pomodoro import Bus, suppress_errors, Events, on, SessionType, SessionPayload
+import focusyn.pomodoro.plugin as plugin
+from focusyn.pomodoro import Bus, suppress_errors, Events, on, SessionType, SessionPayload
 
 logger = logging.getLogger(__name__)
 
@@ -26,16 +26,16 @@ class NotifyPlugin(plugin.Plugin):
     def __init__(self):
         super().__init__()
         self.config = None
-        self.notification = Notify.Notification.new("tomate-notify-plugin")
+        self.notification = Notify.Notification.new("focusyn-notify-plugin")
 
     def configure(self, bus: Bus, graph: Graph) -> None:
         super().configure(bus, graph)
-        self.config = graph.get("tomate.config")
+        self.config = graph.get("focusyn.config")
 
     @suppress_errors
     def activate(self):
         super().activate()
-        Notify.init("tomate-notify-plugin")
+        Notify.init("focusyn-notify-plugin")
 
     @suppress_errors
     def deactivate(self):
@@ -75,4 +75,4 @@ class NotifyPlugin(plugin.Plugin):
 
     @property
     def icon_path(self):
-        return self.config.icon_path("tomate", 32)
+        return self.config.icon_path("focusyn", 32)
